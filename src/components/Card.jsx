@@ -4,9 +4,10 @@ import { CountContext } from "../App"
 
 const Card = () => {
     const { count, setCount } = useContext(CountContext)
+    const hadleCountIncrement = () => setCount(count + 1)
     return <div className="card">
         <h3>{count}</h3>
-        <button onClick={() => setCount(count + 1)}>Click</button>
+        <button onClick={hadleCountIncrement}>Click</button>
     </div>
 }
 

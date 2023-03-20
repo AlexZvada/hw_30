@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import "./App.css"
 import Layout from './components/Layout';
 
-export const CountContext = createContext()
+export const CountContext = createContext(null)
 
 function App() {
   const [count, setCount] = useState(0);
